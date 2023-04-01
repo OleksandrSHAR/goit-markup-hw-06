@@ -25,6 +25,19 @@ body {
   padding-left: 15px;
   padding-right: 15px;
 }
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 /*---------------------- Navigation -------------------*/
 .header-flex {
   display: flex;
@@ -175,6 +188,7 @@ body {
   opacity: 0;
   pointer-events: none;
 }
+/**-------------madal------------**/
 .madal {
   width: 408px;
   height: 576px;
@@ -210,6 +224,133 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.modal-headline {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5%;
+
+  text-align: center;
+  letter-spacing: 0.02em;
+  margin-top: 48px;
+  margin-bottom: 16px;
+}
+
+.labrl-text {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17%;
+
+  letter-spacing: 0.04em;
+  color: var(--border-color);
+}
+.imput-wrap {
+  position: relative;
+  margin-top: 4px;
+  margin-bottom: 8px;
+}
+.madal-imput {
+  width: 100%;
+  height: 40px;
+  padding-left: 38px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+}
+.madal-imput:focus {
+  border-color: var(--logo-text-color);
+  outline: none;
+}
+.madal-imput:focus + .madal-svg {
+  fill: var(--logo-text-color);
+}
+.madal-svg {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 16px;
+
+  width: 18px;
+  height: 24px;
+  fill: var(--title-text-color);
+}
+
+.modal-coments-text {
+  width: 100%;
+  height: 120px;
+  border: 1px solid var(--border-color);
+  resize: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  margin-top: 4px;
+}
+.modal-coments-text:focus {
+  border-color: var(--logo-text-color);
+  outline: none;
+}
+
+.privacy-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+
+  letter-spacing: 0.04em;
+
+  display: flex;
+
+  gap: 8px;
+}
+
+.privacy-text span {
+  width: 16px;
+  height: 16px;
+  border: 1.25px solid var(--border-color);
+  border-radius: 2px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: transparent;
+}
+.checbox-stale:checked + .privacy-text span {
+  background-color: var(--logo-text-color);
+  border: none;
+  fill: var(--accent-color);
+}
+
+.privacy-titel {
+  margin-top: 16px;
+  margin-bottom: 24px;
+}
+.button-form {
+  gap: 10px;
+
+  display: block;
+  width: 169px;
+  height: 56px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 16px 32px;
+  border: none;
+  border-radius: 4px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
+
+  color: var(--body-color);
+  background-color: var(--logo-text-color);
+}
+.button-form:is(:hover, :focus) {
+  background-color: var(--color-ocean);
+}
+.form-seting {
+  display: inline-block;
+  text-align: start;
+  width: 100%;
 }
 /*------------------------ Benefits -----------------*/
 .benefits {
