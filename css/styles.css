@@ -229,26 +229,27 @@ body {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5%;
+  line-height: 1.5;
 
   text-align: center;
   letter-spacing: 0.02em;
   margin-top: 48px;
-  margin-bottom: 16px;
 }
 
 .labrl-text {
   font-weight: 400;
   font-size: 12px;
-  line-height: 1.17%;
+  line-height: 1.17;
 
   letter-spacing: 0.04em;
   color: var(--border-color);
 }
-.imput-wrap {
-  position: relative;
+.laib-set {
   margin-top: 4px;
   margin-bottom: 8px;
+}
+.warap-imput {
+  position: relative;
 }
 .madal-imput {
   width: 100%;
@@ -323,26 +324,27 @@ body {
   margin-top: 16px;
   margin-bottom: 24px;
 }
-.button-form {
-  transition: var(--time-transform);
-  gap: 10px;
 
-  display: block;
-  width: 169px;
-  height: 56px;
-  margin: 0 auto;
-  text-align: center;
+.button-form {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
   padding: 16px 32px;
+
+  margin: 0 auto;
+
   border: none;
   border-radius: 4px;
+  gap: 10px;
 
-  font-family: inherit;
+  font-family: Roboto, sans-serif;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
 
+  transition: var(--time-transform);
   color: var(--body-color);
   background-color: var(--logo-text-color);
 }
@@ -600,7 +602,7 @@ body {
 }
 .media {
   margin-left: 120px;
-  margin-right: 80px;
+  margin-right: auto;
 }
 .media-titel {
   font-family: Roboto, sans-serif;
@@ -639,13 +641,18 @@ body {
   height: 24px;
 }
 .footer-form {
-  width: 100%;
-  height: 100%;
+  width: 453px;
+  height: 40px;
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 500;
 }
-.wrap-mail {
-  margin-top: 16px;
+.divi {
   display: flex;
+  bottom: 0;
 }
+
 .footer-mail-user {
   width: 264px;
   height: 40px;
@@ -688,25 +695,16 @@ body {
 }
 
 .footer-mail-text {
-  margin-bottom: 16px;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5%;
-
+  line-height: 1.5;
   letter-spacing: 0.02em;
+
+  margin-bottom: 16px;
   color: var(--body-color);
 }
-.wrap-form {
-  display: flex;
 
-  width: 453px;
-  height: 80px;
-
-  font-family: Roboto, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-}
 .svg-foot {
   width: 24px;
   height: 24px;

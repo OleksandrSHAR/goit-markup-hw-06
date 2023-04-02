@@ -78,10 +78,10 @@
               Leave your contacts and we will call you back
             </h2>
             <form class="form-seting">
-              <label  
+              <label class="laib-set"
                 ><span class="labrl-text">Name</span>
 
-                <div class="imput-wrap">
+                <span class="warap-imput">
                   <input
                     class="madal-imput"
                     type="text"
@@ -90,34 +90,38 @@
                   /><svg class="madal-svg">
                     <use href="./images/symbol-defs.svg#icon-person"></use>
                   </svg>
-                </div>
+                </span>
               </label>
-              <label  
+              <label class="laib-set"
                 ><span class="labrl-text">Phone</span>
 
-                <div class="imput-wrap">
-                  <input
+                <span class="warap-imput"
+                  ><input
                     class="madal-imput"
                     type="text"
                     name="user-phone"
                     required
                   /><svg class="madal-svg">
                     <use href="./images/symbol-defs.svg#icon-phone"></use>
-                  </svg></div
-              ></label>
-              <label class= 
+                  </svg>
+                </span>
+              </label>
+              <label class="laib-set"
                 ><span class="labrl-text">Email</span>
-                <div class="imput-wrap form-seting">
-                  <input
+
+                <span class="warap-imput"
+                  ><input
                     class="madal-imput"
                     type="email"
                     name="user-email"
                     required
-                  /><svg class="madal-svg">
+                  />
+                  <svg class="madal-svg">
                     <use href="./images/symbol-defs.svg#icon-email"></use>
-                  </svg></div
-              ></label>
-              <div  >
+                  </svg>
+                </span>
+              </label>
+              <div>
                 <label for="user-coments"
                   ><span class="labrl-text">Comment</span>
                 </label>
@@ -128,7 +132,7 @@
                   placeholder="Text input"
                 ></textarea>
               </div>
-              <div class="privacy-titel  ">
+              <div class="privacy-titel">
                 <input
                   class="checbox-stale visually-hidden"
                   type="checkbox"
@@ -137,8 +141,8 @@
                   value="true"
                 />
                 <label class="privacy-text" for="privacy"
-                  ><span
-                    ><svg class="check-icon" width="10" hidden="8">
+                  ><span class="check-icon"
+                    ><svg width="10" height="8">
                       <use href="./images/symbol-defs.svg#icon-Vector-1"></use>
                     </svg>
                   </span>
@@ -548,28 +552,31 @@
               </a>
             </li>
           </ul>
-           
-         </div>
- 
-         <div class="wrap-form"> 
-           <form class="footer-form">
-            
-          
-             <label ><span class="footer-mail-text">Subscribe</span>
-              <div class="wrap-mail"> <input type="email"
+        </div>
+
+        <form class="footer-form">
+          <h3 class="footer-mail-text">Subscribe</h3>
+          <div class="divi">
+            <input
+              type="email"
               name="footer-nail"
               class="footer-mail-user"
               placeholder="E-mail"
-              required> 
-            <button class="buttop-mail pointer">Subscribe
+              required
+            />
+
+            <button class="buttop-mail pointer">
+              Subscribe
               <svg class="svg-foot">
-                <use href="./images/symbol-defs.svg#icon-Frame0" width="24"
-                height="24"></use>
+                <use
+                  href="./images/symbol-defs.svg#icon-Frame0"
+                  width="24"
+                  height="24"
+                ></use>
               </svg>
-            </button>  </div> 
-            </label>
-               
-</form></div> 
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
     <script src="./js/modal.js"></script>
