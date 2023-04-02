@@ -236,16 +236,17 @@ body {
   margin-top: 48px;
 }
 
-.labrl-text {
+.label-text {
   font-weight: 400;
   font-size: 12px;
+
+  line-height: 14px;
   line-height: 1.17;
 
   letter-spacing: 0.04em;
   color: var(--border-color);
 }
 .laib-set {
-  margin-top: 4px;
   margin-bottom: 8px;
 }
 .warap-imput {
@@ -284,6 +285,12 @@ body {
   border-radius: 4px;
   padding: 8px 16px;
   margin-top: 4px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.7;
+
+  letter-spacing: 0.04em;
 }
 .modal-coments-text:focus {
   border-color: var(--logo-text-color);
@@ -663,11 +670,10 @@ body {
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 2%;
-  padding-left: 16px;
+  line-height: 2;
   background-color: transparent;
   color: #ffffff;
-
+  padding-left: 16px;
   display: flex;
   align-items: center;
   letter-spacing: 0.04em;
