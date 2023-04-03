@@ -191,7 +191,7 @@ body {
 /**-------------madal------------**/
 .madal {
   width: 408px;
-  height: 576px;
+  height: 584px;
   background-color: var(--body-color);
 
   position: absolute;
@@ -252,6 +252,7 @@ body {
 }
 .warap-imput {
   position: relative;
+  margin-top: 4px;
 }
 .madal-imput {
   width: 100%;
